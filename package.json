@@ -1,0 +1,30 @@
+{
+  "name": "database_agent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google/genai": "^2.10.0",
+    "@langchain/classic": "^1.0.38",
+    "@langchain/google-genai": "^2.2.0",
+    "dotenv": "^17.4.2",
+    "langchain": "^1.5.2",
+    "mysql2": "^3.22.5",
+    "readline-sync": "^1.4.10",
+    "tsc": "^2.0.4",
+    "typeorm": "^1.0.0",
+    "typescript": "^6.0.3",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.0",
+    "@types/readline-sync": "^1.4.8",
+    "tsx": "^4.23.0"
+  }
+}
