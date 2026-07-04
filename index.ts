@@ -2,8 +2,12 @@ import readlineSync from "readline-sync";
 import { sqlAgent } from "./agents/sqlAgent.js";
 import { config } from "dotenv";
 import db from "./utils/db.js";
+import { writeFile } from "fs/promises";
 
 config();
+
+const png = await sqlAgent.drawMermaidPng();
+await writeFile("Agent-Graph.png", png);
 
 console.log("\n Hello!! I am a Database agent. How can I help you today?\n");
 
